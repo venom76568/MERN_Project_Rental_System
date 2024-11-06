@@ -1,0 +1,131 @@
+/* src/components/contact.scss */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+  }
+
+  /* Ensure image doesn't overlap form */
+  .contact-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem; /* Space below the image */
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  /* Contact form now below the image and other content */
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Space after the form */
+
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        outline: none;
+        resize: none;
+      }
+
+      textarea {
+        min-height: 150px;
+        max-height: 300px;
+      }
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+      button {
+        padding: 1rem 2rem;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+.form-actions {
+  text-align: center;
+
+  input[type="submit"] {
+    background: linear-gradient(135deg, #fece51, #f7a900); // Gradient color
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(
+        135deg,
+        #f7a900,
+        #fece51
+      ); // Invert gradient on hover
+      box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); // Increase shadow on hover
+      transform: translateY(-3px); // Lift the button up
+    }
+
+    &:active {
+      transform: translateY(1px); // Slightly depress on click
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); // Reduce shadow on click
+    }
+  }
+}
