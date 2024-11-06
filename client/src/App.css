@@ -6,6 +6,7 @@
   height: 40vmin;
   pointer-events: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
