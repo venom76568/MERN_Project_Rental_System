@@ -67,8 +67,6 @@ function Filter() {
             <option value="">any</option>
             <option value="apartment">Apartment</option>
             <option value="house">House</option>
-            <option value="condo">Condo</option>
-            <option value="land">Land</option>
           </select>
         </div>
         <div className="item">
@@ -93,17 +91,7 @@ function Filter() {
             defaultValue={query.maxPrice}
           />
         </div>
-        <div className="item">
-          <label htmlFor="bedroom">Bedroom</label>
-          <input
-            type="text"
-            id="bedroom"
-            name="bedroom"
-            placeholder="any"
-            onChange={handleChange}
-            defaultValue={query.bedroom}
-          />
-        </div>
+        
         <button onClick={handleFilter}>
           <img src="/search.png" alt="" />
         </button>

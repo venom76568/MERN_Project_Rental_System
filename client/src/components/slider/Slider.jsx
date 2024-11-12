@@ -30,7 +30,7 @@ function Slider({ images }) {
           <div className="imgContainer">
             <img src={images[imageIndex]} alt="" />
           </div>
-          <div className="arrow" onClick={() => changeSlide("right")}>
+          <div className="arrow" onClic k={() => changeSlide("right")}>
             <img src="/arrow.png" className="right" alt="" />
           </div>
           <div className="close" onClick={() => setImageIndex(null)}>
