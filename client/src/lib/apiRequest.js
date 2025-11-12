@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-  baseURL: "http://localhost:8800/api",
+  baseURL: "https://mern-project-rental-system.onrender.com/api",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
-  }
+  },
 });
 
 export default apiRequest;
