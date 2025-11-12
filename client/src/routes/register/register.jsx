@@ -1,6 +1,6 @@
 import "./register.scss";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+//import axios from "axios";
 import { useState } from "react";
 import apiRequest from "../../lib/apiRequest";
 
@@ -12,7 +12,7 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("")
+    setError("");
     setIsLoading(true);
     const formData = new FormData(e.target);
 
@@ -30,7 +30,7 @@ function Register() {
       navigate("/login");
     } catch (err) {
       const errorMessage = err.response?.data?.message || "An error occurred.";
-  setError(errorMessage);
+      setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
